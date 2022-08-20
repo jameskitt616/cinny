@@ -18,7 +18,7 @@ import Text from '../../atoms/text/Text';
 import RawIcon from '../../atoms/system-icons/RawIcon';
 import IconButton from '../../atoms/button/IconButton';
 import ScrollView from '../../atoms/scroll/ScrollView';
-import { MessageReply } from '../../molecules/message/Message';
+import { MessageReply, MessageEdit } from '../../molecules/message/Message';
 
 import StickerBoard from '../sticker-board/StickerBoard';
 
@@ -263,6 +263,19 @@ function RoomViewInput({
   };
 
   const handleKeyDown = (e) => {
+    //and message box empty
+    if (e.key === 'ArrowUp') {
+      // MessageEdit
+
+
+      // <MessageReply
+      // userId={replyTo.userId}
+      // name={getUsername(replyTo.userId)}
+      // color={colorMXID(replyTo.userId)}
+      // body={replyTo.body}
+      // />
+    }
+
     if (e.key === 'Enter' && e.shiftKey === false) {
       e.preventDefault();
       sendMessage();

@@ -833,4 +833,4 @@ Message.propTypes = {
   fullTime: PropTypes.bool,
 };
 
-export { Message, MessageReply, PlaceholderMessage };
+export { Message, MessageReply, MessageEdit, PlaceholderMessage };
